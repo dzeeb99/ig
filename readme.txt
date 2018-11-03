@@ -5,16 +5,13 @@ Penggunaan di Windows :
 3. Jalanin deh
 
 Penggunaan di Linux :
-$ apt install git php php-curl -y
-$ apt-get update
-$ git clone https://github.com/f0xbase/ig.git
-$ chmod -R 777 ggwp/ && cd ggwp
+$ apt install php php-curl -y && apt-get update
+$ git clone https://github.com/f0xbase/ig.git && chmod -R 777 ig/ && cd ig
 $ php bot-reg-ig.php
 
 Penggunaan di Termux :
-$ pkg install git php php-curl
-$ git clone https://github.com/f0xbase/ig.git
-$ chmod -R 777 ig/ && cd ig
+$ pkg install php php-curl
+$ git clone https://github.com/f0xbase/ig.git && chmod -R 777 ig/ && cd ig
 $ php bot-reg-ig.php
 
 Edit Data dibawah ini di Line 186 - 189 
