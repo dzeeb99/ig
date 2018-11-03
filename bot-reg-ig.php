@@ -183,8 +183,8 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'referer: https://www.instagram.com/',
 'authority: www.instagram.com'
 ));
-$email = "kocomon".rand(000000,9999)."@gmail.com"; /// Edit Sama email Lo
-$username = "risman.id_".rand(000000,9999);  /// Edit Username yg u inginkan
+$email = "wgans".rand(000000,9999)."@gmail.com"; /// Edit Sama email Lo
+$username = "sgbteam.or.id_".rand(000000,9999);  /// Edit Username yg u inginkan
 #$password = $username.randd();
 $password = "f0xbase123";  /// Edit password yg u inginkan
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
@@ -215,7 +215,7 @@ $red = "\e[91m";
 	echo "Password     : ".$cyan.$password."\n".$normal;
 	echo "MD5 Password : ".md5($password)."\n";
 	//echo "Is Exist     : ".cek_user($username)."\n";
-	save("accounts-ig.lst",$username."|$password => [ $email - ".$response["user_id"]." ]");
+	save("list-accounts-ig.txt",$username."|$password => [ $email - ".$response["user_id"]." ]");
 }else{
 	echo "Account Isn't Created\n";
 	echo $response["errors"]["ip"][0]."\n";
