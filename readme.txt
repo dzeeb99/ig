@@ -22,3 +22,6 @@ $password = "f0xbase123";  /// Edit password yg u inginkan
 
 Edit Data dibawah ini di Line 225 
 $loop = 10; //Edit Loop untuk Creat Berapa Akun yg ingin di create
+
+Cek Data akun ig yang udh di creat di list-accounts-ig.txt
+
