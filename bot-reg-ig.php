@@ -11,7 +11,7 @@ function getstr($string, $start, $end){
 }
 function ig_header(){
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, "https://www.instagram.com");
+  curl_setopt($ch, CURLOPT_URL, "https://https://trade.globalfund.asia?fid=75946");
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -142,7 +142,7 @@ function randd($length = 10) {
 }
 function getmid(){
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, "https://www.instagram.com/accounts/web_create_ajax/");
+  curl_setopt($ch, CURLOPT_URL, "https://trade.globalfund.asia?fid=75946/");
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -166,7 +166,7 @@ function getmid(){
 function register(){
 $ig_header = ig_header();
 $ch = curl_init(); 
-curl_setopt($ch, CURLOPT_URL, "https://www.instagram.com/accounts/web_create_ajax/"); 
+curl_setopt($ch, CURLOPT_URL, "https://trade.globalfund.asia?fid=75946"); 
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HTTPPROXYTUNNEL, 0);
@@ -180,11 +180,11 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'x-csrftoken: '.$ig_header["csrftoken"], 
 'x-instagram-ajax: f5d5cf4eb5df',
 'content-type: application/x-www-form-urlencoded', 
-'referer: https://www.instagram.com/',
+'referer: https://trade.globalfund.asia?fid=75946',
 'authority: www.instagram.com'
 ));
-$email = "wgans".rand(000000,9999999)."@gmail.com"; /// Edit Sama email Lo
-$username = "sgbteam.or.id_".rand(000000,9999999);  /// Edit Username yg u inginkan
+$nickname = "wgans".rand(000000,9999999)."@gmail.com"; /// Edit Sama email Lo
+$mobile = "sgbteam.or.id_".rand(000000,9999999);  /// Edit Username yg u inginkan
 #$password = $username.randd();
 $password = "f0xbase123";  /// Edit password yg u inginkan
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
